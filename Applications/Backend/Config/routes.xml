@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<routes>
+	<!-- Connexion / Déconnexion -->
+	<route url="/deconnexion.html" module="Connexion" action="deconnexion" />
+	
+	<!-- Accueil -->
+	<route url="/" module="Accueil" action="index" />
+	<route url="/suggestion-delete-([0-9]+).html" module="Accueil" action="delete" vars="id" />
+	
+	<!-- Compte -->
+	<route url="/compte.html" module="Utilisateur" action="edit" />
+	
+	<!-- Genre -->
+	<route url="/genres.html" module="Genre" action="index" />
+	<route url="/genre-new.html" module="Genre" action="new" />
+	<route url="/genre-delete-([0-9]+).html" module="Genre" action="delete" vars="id" />
+	<route url="/genre-edit-([0-9]+).html" module="Genre" action="edit" vars="id" />
+	
+	<!-- Auteurs -->
+	<route url="/auteurs.html" module="Auteur" action="index" />
+	<route url="/auteur-new.html" module="Auteur" action="new" />
+	<route url="/auteur-delete-([0-9]+).html" module="Auteur" action="delete" vars="id" />
+	<route url="/auteur-edit-([0-9]+).html" module="Auteur" action="edit" vars="id" />
+	
+	<!-- Livres -->
+	<route url="/livres-([a-z]).html" module="Livre" action="index" vars="letter" />
+	<route url="/livre-new.html" module="Livre" action="new" />
+	<route url="/livre-delete-([0-9]+).html" module="Livre" action="delete" vars="id" />
+	<route url="/livre-edit-([0-9]+).html" module="Livre" action="edit" vars="id" />
+	<route url="/livre-([0-9]+).html" module="Livre" action="show" vars="id" />
+	<route url="/livre-get-([0-9]+).html" module="Livre" action="getadd" vars="id" />
+	<route url="/livre-get-remove-([0-9]+).html" module="Livre" action="getremove" vars="id" />
+	<route url="/livre-read-([0-9]+).html" module="Livre" action="readadd" vars="id" />
+	<route url="/livre-read-remove-([0-9]+).html" module="Livre" action="readremove" vars="id" />
+	<route url="/livre-want-([0-9]+).html" module="Livre" action="wantadd" vars="id" />
+	<route url="/livre-want-remove-([0-9]+).html" module="Livre" action="wantremove" vars="id" />
+	<route url="/livres-get.html" module="Livre" action="get" />
+	<route url="/livres-want.html" module="Livre" action="want" />
+	<route url="/livres-read.html" module="Livre" action="read" />
+	<route url="/livres-get-export.html" module="Livre" action="getexport" />
+	<route url="/livres-want-export.html" module="Livre" action="wantexport" />
+	<route url="/livres-read-export.html" module="Livre" action="readexport" />
+	
+	<!-- Recherche -->
+	<route url="/recherche.html" module="Recherche" action="index" />
+	<route url="/recherche-resultats.html" module="Recherche" action="result" />
+</routes>

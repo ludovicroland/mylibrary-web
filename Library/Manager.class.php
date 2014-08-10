@@ -1,0 +1,1 @@
+<?php    namespace Library;    	/**	* Classe abstraite dont hérite les managers.	*/    abstract class Manager {        protected $dao;        		/**		* COnstrcuteurs		* @param $dao pdo		*/        public function __construct($dao) {            $this->dao = $dao;        }    }

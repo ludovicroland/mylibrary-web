@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	
+	RewriteBase /
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+
+	RewriteRule ^(.*)$ backend.php [QSA,L]
+</IfModule>
