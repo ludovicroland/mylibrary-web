@@ -1,14 +1,19 @@
 <?php
-    namespace Library;
+  namespace Library;
+  
+  abstract class ApplicationComponent 
+  {
+  
+    protected $app;
     
-    abstract class ApplicationComponent {
-        protected $app;
-        
-        public function __construct(Application $app) {
-            $this->app = $app;
-        }
-        
-        public function app() {
-            return $this->app;
-        }
+    public function __construct(Application $app) 
+    {
+      $this->app = $app;
     }
+    
+    public function app() 
+    {
+      return $this->app;
+    }
+    
+  }

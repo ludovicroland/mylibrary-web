@@ -1,12 +1,13 @@
 <?php
-    namespace Library;
+  namespace Library;
+
+  class NotNullValidator 
+    extends Validator 
+  {
     
-	/**
-	* Classe permettant de s'assurer qu'un champ de formulaire n'est pas null.
-	*/
-    class NotNullValidator extends Validator {
-		/** {@inheritDoc} */
-		public function isValid($value) {	   
-            return trim($value) != '';
-        }
+    public function isValid($value) 
+    {	   
+      return trim($value) != '';
     }
+    
+  }

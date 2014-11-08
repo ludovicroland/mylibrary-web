@@ -1,40 +1,35 @@
 <?php
-    namespace Library;
-    
-	/**
-	* Classe s'assurant du nombre de caractères du champ d'un formulaire.
-	*/
-    class ExactLengthValidator extends Validator {
-        protected $length;
-        
-		/**
-		* Constructeur.
-		* @param $errorMessage message d'erreur
-		* @param $length longueur
-		*/
-        public function __construct($errorMessage, $length) {
-            parent::__construct($errorMessage);
-            
-            $this->setLength($length);
-        }
-        
-		/** {@inheritDoc} */
-        public function isValid($value) {
-            return strlen($value) == $this->length;
-        }
-        
-		/**
-		* Setter du nombre de caractères.
-		* @param $length nombre de caractères.
-		*/
-        public function setLength($length) {
-            $length = (int) $length;
-            
-            if ($length > 0) {
-                $this->length = $length;
-            }
-            else {
-                throw new \RuntimeException('La longueur doit être un nombre supérieur à 0');
-            }
-        }
+  namespace Library;
+  
+  class ExactLengthValidator 
+    extends Validator 
+  {
+      
+    protected $length;
+
+    public function __construct($errorMessage, $length) 
+    {
+      parent::__construct($errorMessage);
+      $this->setLength($length);
     }
+      
+    public function isValid($value) 
+    {
+      return strlen($value) == $this->length;
+    }
+
+    public function setLength($length) 
+    {
+      $length = (int) $length;
+      
+      if ($length > 0)
+      {
+        $this->length = $length;
+      }
+      else 
+      {
+        throw new \RuntimeException('La longueur doit être un nombre supérieur à 0');
+      }
+    }
+    
+  }

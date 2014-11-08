@@ -22,7 +22,14 @@
 				<div class="container">
 					<div class="navbar-header">
 						<a class="navbar-brand" href="/">Bibliothèque</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
 					</div>
+          
 					<div id="navbar-main" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
 							<li><a href="/genres.html">Les genres</a></li>
@@ -57,7 +64,7 @@
 		
 		<div class="footer">
 			<div class="container">
-				<p>v 1.2.1&nbsp;-&nbsp;Site réalisé par <a href="http://www.rolandl.fr" target="_blank">Ludovic ROLAND</a></p>
+				<p>v 1.4&nbsp;-&nbsp;Site réalisé par <a href="http://www.rolandl.fr" target="_blank">Ludovic ROLAND</a></p>
 			</div>
 		</div>
 	</body>
