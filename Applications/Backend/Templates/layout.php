@@ -64,7 +64,7 @@
 		
 		<div class="footer">
 			<div class="container">
-				<p>v 1.4&nbsp;-&nbsp;Site réalisé par <a href="http://www.rolandl.fr" target="_blank">Ludovic ROLAND</a></p>
+				<p>v 1.4&nbsp;-&nbsp;Site réalisé par <a href="http://www.rolandl.fr" target="_blank">Ludovic ROLAND</a>&nbsp;-&nbsp;Design par <a href="http://bootswatch.com/" target="_blank">Bootswatch</a></p>
 			</div>
 		</div>
 	</body>

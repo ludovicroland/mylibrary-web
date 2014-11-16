@@ -58,14 +58,7 @@
       {
         if ($e->getCode() == \Library\Router::NO_ROUTE) 
         {
-          if($this->name == 'Backend') 
-          {
-            $this->httpResponse->redirect('../erreur.html');
-          }
-          else 
-          {
-            $this->httpResponse->redirect('../erreur404.html');
-          }
+          $this->httpResponse->redirect404($this);
         }
       }
       
