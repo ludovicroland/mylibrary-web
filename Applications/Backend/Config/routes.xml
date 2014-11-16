@@ -16,13 +16,13 @@
 	<route url="/genre-delete-([0-9]+).html" module="Genre" action="delete" vars="id" />
 	<route url="/genre-edit-([0-9]+).html" module="Genre" action="edit" vars="id" />
 	
-	<!-- Auteurs -->
+	<!-- Auteur -->
 	<route url="/auteurs.html" module="Auteur" action="index" />
 	<route url="/auteur-new.html" module="Auteur" action="new" />
 	<route url="/auteur-delete-([0-9]+).html" module="Auteur" action="delete" vars="id" />
 	<route url="/auteur-edit-([0-9]+).html" module="Auteur" action="edit" vars="id" />
 	
-	<!-- Livres -->
+	<!-- Livre -->
 	<route url="/livres-([a-z]).html" module="Livre" action="index" vars="letter" />
 	<route url="/livre-new.html" module="Livre" action="new" />
 	<route url="/livre-delete-([0-9]+).html" module="Livre" action="delete" vars="id" />

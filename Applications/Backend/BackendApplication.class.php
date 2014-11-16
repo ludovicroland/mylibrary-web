@@ -1,7 +1,8 @@
 <?php
   namespace Applications\Backend;
   
-  class BackendApplication extends \Library\Application 
+  class BackendApplication 
+    extends \Library\Application 
   {
   
     public function __construct() 
@@ -18,11 +19,12 @@
       }
       else 
       {
-        $controller = new Modules\Connexion\ConnexionController($this, 'Connexion', 'index');
+        $controller = new Modules\Connexion\ConnexionController($this, 'Connexion', 'index', true);
       }
       
       $controller->execute();     
       $this->httpResponse->setPage($controller->page());
       $this->httpResponse->send($controller->loadTemplate());
     }
+    
   }
