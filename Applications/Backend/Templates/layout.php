@@ -39,6 +39,7 @@
 							<li><a href="/livres-get.html">Je possède</a></li>
 							<li><a href="/livres-want.html">Je veux</a></li>
 							<li><a href="/recherche.html"><span class="glyphicon glyphicon-search"></span></a></li>
+              <li><a href="/livres-export-all.html" target="_blank"><span class="glyphicon glyphicon-download-alt"></span></a></li>
 						</ul>
 						
 						<ul class="nav navbar-nav navbar-right">

@@ -223,4 +223,10 @@
 			
 			$this->page->addVar('livresList', $livresList);
         }
+    
+    public function executeAllexport(\Library\HTTPRequest $request) {
+			$livresList = $this->managers->getManagerOf('Livre')->getAllList();
+			
+			$this->page->addVar('livresList', $livresList);
+        }
     }
