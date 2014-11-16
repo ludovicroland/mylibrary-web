@@ -9,17 +9,20 @@
     protected $module;
       
     protected $url;
+    
+    protected $loadTemplate;
       
     protected $varsNames;
       
     protected $vars = array();
       
-    public function __construct($url, $module, $action, array $varsNames) 
+    public function __construct($url, $module, $action, array $varsNames, $loadTemplate) 
     {
       $this->setUrl($url);
       $this->setModule($module);
       $this->setAction($action);
       $this->setVarsNames($varsNames);
+      $this->setLoadTemplate($loadTemplate);
     }
 
     public function hasVars() 
@@ -60,6 +63,14 @@
         $this->url = $url;
       }
     }
+    
+    public function setLoadTemplate($loadTemplate) 
+    {
+      if (is_bool($loadTemplate)) 
+      {
+        $this->loadTemplate = $loadTemplate;
+      }
+    }
 
     public function setVarsNames(array $varsNames) 
     {
@@ -79,6 +90,11 @@
     public function module() 
     {
       return $this->module;
+    }
+    
+    public function loadTemplate() 
+    {
+      return $this->loadTemplate;
     }
       
     public function vars() 

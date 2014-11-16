@@ -37,9 +37,9 @@
 	<route url="/livres-get.html" module="Livre" action="get" />
 	<route url="/livres-want.html" module="Livre" action="want" />
 	<route url="/livres-read.html" module="Livre" action="read" />
-	<route url="/livres-get-export.html" module="Livre" action="getexport" />
-	<route url="/livres-want-export.html" module="Livre" action="wantexport" />
-	<route url="/livres-read-export.html" module="Livre" action="readexport" />
+	<route url="/livres-get-export.html" module="Livre" action="getexport" loadTemplate="false" />
+	<route url="/livres-want-export.html" module="Livre" action="wantexport" loadTemplate="false" />
+	<route url="/livres-read-export.html" module="Livre" action="readexport" loadTemplate="false" />
 	
 	<!-- Recherche -->
 	<route url="/recherche.html" module="Recherche" action="index" />

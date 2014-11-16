@@ -18,7 +18,7 @@
       $this->vars[$var] = $value;
     }
 
-    public function getGeneratedPage() {
+    public function getGeneratedPage($loadTemplate) {
       if (!file_exists($this->contentFile)) 
       {
         throw new \RuntimeException('La vue spécifiée n\'existe pas');
@@ -32,7 +32,15 @@
       $content = ob_get_clean();
         
       ob_start();
-      require __DIR__.'/../Applications/'.$this->app->name().'/Templates/layout.php';
+      
+      if($loadTemplate) 
+      {
+        require __DIR__.'/../Applications/'.$this->app->name().'/Templates/layout.php';
+      }
+      else
+      {
+        require __DIR__.'/layout.php';
+      }
       
       return ob_get_clean();
     }

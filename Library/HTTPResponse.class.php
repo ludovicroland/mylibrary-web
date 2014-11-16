@@ -25,9 +25,9 @@
     // $this->send();
     // }
 
-    public function send()
+    public function send($loadTemplate)
     {
-      exit($this->page->getGeneratedPage());
+      exit($this->page->getGeneratedPage($loadTemplate));
     }
         
     public function setPage(Page $page)  
