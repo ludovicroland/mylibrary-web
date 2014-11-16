@@ -41,6 +41,9 @@
 	<route url="/livres-want-export.html" module="Livre" action="wantexport" loadTemplate="false" />
 	<route url="/livres-read-export.html" module="Livre" action="readexport" loadTemplate="false" />
   <route url="/livres-export-all.html" module="Livre" action="allexport" loadTemplate="false" />
+  
+  <!-- Liste -->
+  <route url="/listes.html" module="Liste" action="index" />
 	
 	<!-- Recherche -->
 	<route url="/recherche.html" module="Recherche" action="index" />

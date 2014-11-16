@@ -35,9 +35,7 @@
 							<li><a href="/genres.html">Les genres</a></li>
 							<li><a href="/auteurs.html">Les auteurs</a></li>
 							<li><a href="/livres-a.html">Les livres</a></li>
-							<li><a href="/livres-read.html">J'ai lu</a></li>
-							<li><a href="/livres-get.html">Je possède</a></li>
-							<li><a href="/livres-want.html">Je veux</a></li>
+							<li><a href="/listes.html">Mes listes</a></li>
 							<li><a href="/recherche.html"><span class="glyphicon glyphicon-search"></span></a></li>
               <li><a href="/livres-export-all.html" target="_blank"><span class="glyphicon glyphicon-download-alt"></span></a></li>
 						</ul>
