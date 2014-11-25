@@ -35,7 +35,7 @@
     
     public function setManager(\Library\Manager $manager) 
     {
-      S$this->manager = $manager;
+      $this->manager = $manager;
     }
     
     public function setRequest(\Library\HTTPRequest $request) 
