@@ -68,4 +68,4 @@ Users have to be add directly in the database. Passwords have to be encrypted wi
 
 ###1.3.3
 
-* First public version of the framework.
+* First public version of the project
