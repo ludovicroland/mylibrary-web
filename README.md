@@ -52,6 +52,7 @@ Users have to be add directly in the database. Passwords have to be encrypted wi
 ###1.4.2
 
 * Updated the SQL script
+* Added the missing 'upload' directory
 
 
 ###1.4.1
