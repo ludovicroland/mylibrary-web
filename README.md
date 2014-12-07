@@ -1,7 +1,7 @@
 #My Library
 
 Contributors: Ludovic Roland ([http://www.rolandl.fr](http://www.rolandl.fr))<br/>
-Stable tag: 1.4.2<br/>
+Stable tag: 1.4.2.1<br/>
 License: GNU GPL v2.0<br/>
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,9 @@ In order to work, your domain name has to target the directory 'Web'.
 Users have to be add directly in the database. Passwords have to be encrypted with SHA1.
 
 ##Changelog
+
+###1.4.2.1
+* Fixed syntax error
 
 ###1.4.2
 
